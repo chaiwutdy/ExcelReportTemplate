@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="commonDAO" class="com.report.dao.impl.CommonDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="dummyRptDAO" class="com.report.dao.impl.DummyRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="invAdvRptSitDAO" class="com.report.dao.impl.InvAdvRptSitDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="stockRptDAO" class="com.report.dao.impl.StockRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="stockAdvanceRptDAO" class="com.report.dao.impl.StockAdvanceRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="stockNormalRptDAO" class="com.report.dao.impl.StockNormalRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="backOrderRptDAO" class="com.report.dao.impl.BackOrderRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="backOrder3MRptDAO" class="com.report.dao.impl.BackOrder3MRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="backOrderMore3MRptDAO" class="com.report.dao.impl.BackOrderMore3MRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="mailDAO" class="com.report.dao.impl.MailDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="backOrderSitNtwRptDAO" class="com.report.dao.impl.BackOrderSitNtwRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="backOrderSitZoneRptDAO" class="com.report.dao.impl.BackOrderSitZoneRptDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+</beans>
